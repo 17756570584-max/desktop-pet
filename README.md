@@ -1,2 +1,51 @@
-# desktop-pet
-A lightweight desktop pet for Windows
+# Mimo Desktop Pet
+
+一个轻量的桌面宠物小工具，默认宠物名为 `Mimo`，默认图片位于：
+
+```text
+default\default.png
+```
+
+也包含浏览器插件版本：
+
+- Windows 桌面版：真正置顶显示在桌面上。
+- Chrome/Edge 插件版：显示在网页上。
+
+上传或选择自家小猫小狗的照片后，它会变成会动的浮动宠物。
+
+## Windows 桌面版
+
+双击运行：
+
+```text
+D:\codex\pet-desktop-plugin\start-desktop-pet.cmd
+```
+
+首次启动会直接使用默认图片和名字 `Mimo`。之后可以右键宠物选择新照片、创建当天任务表格、变小、开关“自己散步”或退出。默认不会自己移动。
+
+任务会按日期保存成表格数据：
+
+```text
+D:\codex\pet-desktop-plugin\tasks\YYYY-MM-DD.json
+```
+
+## 浏览器插件版使用方法
+
+1. 打开 Chrome 或 Edge 的扩展程序页面。
+2. 开启“开发者模式”。
+3. 选择“加载已解压的扩展程序”。
+4. 选择 `D:\codex\pet-desktop-plugin`。
+5. 点击浏览器工具栏里的插件图标，上传宠物照片。
+
+## 功能
+
+- 上传猫狗照片，保存在本地浏览器存储里。
+- 上传时会自动从照片边缘识别背景并生成透明 PNG。
+- 在所有网页显示浮动宠物。
+- 支持拖动位置、调整大小、显示名字。
+- 支持自动慢慢散步。
+- 双击宠物可以隐藏，再从插件弹窗打开。
+
+## 说明
+
+浏览器插件版只会显示在网页上，不会覆盖 Windows 桌面或其他应用窗口。需要真正桌面效果时，请使用 Windows 桌面版。
